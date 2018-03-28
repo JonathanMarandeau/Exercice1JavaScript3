@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Exercice 1</title>
+  </head>
+  <body>
+    <!-- On sélectionne l'image voulu et on y ajoute le onmouseover et onmouseout pour faire apparaitre et disparaitre la bordure au survole de celle ci-->
+      <img src="images/image1.jpg" alt="imagebouquin" id="image1" onmouseover="putBorder()" onmouseout="removeBorder()"/>
+      <script>
+      // On attribut les fonctions pour réaliser l'effet de la bordure au survole de l'image
+      function putBorder(){
+        //Mise en place de la bordure
+        document.getElementById('image1').style.border = '3px solid red';
+      }
+      function removeBorder(){
+        //Retrait de la bordure
+        document.getElementById('image1').style.border = '';
+      }
+      </script>
+  </body>
+
+</html>
